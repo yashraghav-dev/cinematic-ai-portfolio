@@ -110,12 +110,14 @@ function About() {
               <span>Intelligence.</span>
             </h3>
 
-            <p>
-              I'm Yash Raghav, a Computer Science and
-              Data Science graduate focused on building
-              a career in Artificial Intelligence,
-              Data Science, and Data Analytics.
-            </p>
+              <p>
+  I'm Yash Raghav, a Computer Science and Data
+  Science graduate passionate about Artificial
+  Intelligence, Machine Learning, and Data Analytics.
+  I focus on transforming complex data into
+  intelligent, practical solutions.
+</p>
+ 
 
             <p>
               I work with Python, SQL, Power BI, and
@@ -126,11 +128,13 @@ function About() {
             </p>
 
             <p>
-              My project experience includes Customer
-              Churn Prediction, Lung Cancer Detection,
-              and Customer Behaviour Analysis.
-              I enjoy connecting analytical thinking
-              with practical technology solutions.
+              <p>
+  My project experience includes AI Customer
+  Churn Prediction and Lung Cancer Detection,
+  where I apply machine learning, data analysis,
+  and predictive modeling techniques to solve
+  real-world problems.
+</p>
             </p>
 
             <div className="about-education">
