@@ -1,0 +1,658 @@
+
+/* =========================================
+   CONTACT SECTION - DARK PURPLE THEME
+   ========================================= */
+
+.portfolio-contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 100px 7% 35px;
+  background: #090612;
+  color: #ffffff;
+  overflow: hidden;
+  scroll-margin-top: 0;
+}
+
+.portfolio-contact * {
+  box-sizing: border-box;
+}
+
+.portfolio-contact-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+/* Background glow */
+
+.portfolio-contact-glow {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  filter: blur(110px);
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+.portfolio-contact .glow-left {
+  background: #8b39ff;
+  left: -200px;
+  bottom: 10%;
+}
+
+.portfolio-contact .glow-right {
+  background: #b05cff;
+  right: -200px;
+  top: 5%;
+}
+
+/* =========================================
+   CONTACT HEADING
+   ========================================= */
+
+.portfolio-contact-heading {
+  margin-bottom: 45px;
+}
+
+.portfolio-contact-label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: #c18cff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.portfolio-contact-line {
+  width: 42px;
+  height: 2px;
+  background: #ad6aff;
+}
+
+.portfolio-contact-heading h2 {
+  margin: 0 0 20px;
+  font-size: clamp(45px, 6vw, 78px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+/* Entire heading in purple */
+
+.contact-purple-title {
+  color: #b477ff !important;
+  -webkit-text-fill-color: #b477ff !important;
+  background: none !important;
+  background-image: none !important;
+  text-shadow: none !important;
+}
+
+.portfolio-contact-heading p {
+  max-width: 720px;
+  color: #b7adc7;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   TWO COLUMN CONTACT LAYOUT
+   ========================================= */
+
+.portfolio-contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 45px;
+  align-items: start;
+}
+
+/* =========================================
+   LEFT CONTACT COLUMN
+   ========================================= */
+
+.portfolio-contact-left {
+  padding-top: 10px;
+}
+
+.portfolio-available {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border: 1px solid rgba(172, 108, 255, 0.4);
+  border-radius: 30px;
+  background: rgba(144, 73, 238, 0.1);
+  color: #d8baff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.portfolio-available-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #6effb3;
+  box-shadow: 0 0 12px #6effb3;
+}
+
+.portfolio-contact-left h3 {
+  margin: 25px 0 16px;
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.portfolio-contact-left h3 span {
+  color: #b477ff;
+}
+
+.portfolio-contact-description {
+  color: #aea5be;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+/* =========================================
+   CONTACT CARDS
+   ========================================= */
+
+.portfolio-contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.portfolio-contact-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding: 14px 17px;
+  border: 1px solid rgba(178, 118, 255, 0.2);
+  border-radius: 15px;
+  background: rgba(29, 18, 47, 0.8);
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+a.portfolio-contact-link:hover {
+  transform: translateX(5px);
+  border-color: #a56cff;
+  background: rgba(53, 29, 83, 0.85);
+}
+
+.portfolio-contact-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(154, 83, 255, 0.15);
+  color: #bd8aff;
+}
+
+.portfolio-contact-link-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+  flex: 1;
+}
+
+.portfolio-contact-link-text span {
+  color: #a99bb9;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.portfolio-contact-link-text strong {
+  color: #ffffff;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.portfolio-contact-copy {
+  border: 0;
+  background: transparent;
+  color: #c294ff;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.portfolio-contact-copy:hover {
+  color: #ffffff;
+}
+
+.portfolio-contact-bottom-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 25px;
+  color: #b78de9;
+  font-size: 13px;
+}
+
+/* =========================================
+   RIGHT CONTACT FORM CARD
+   ========================================= */
+
+.portfolio-contact-form-card {
+  padding: 32px;
+  border: 1px solid rgba(175, 112, 255, 0.4);
+  border-radius: 24px;
+  background: linear-gradient(
+    145deg,
+    rgba(36, 21, 57, 0.96),
+    rgba(17, 11, 29, 0.97)
+  );
+  box-shadow: 0 25px 75px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-form-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.portfolio-form-header span {
+  color: #bf8bff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.portfolio-form-header h3 {
+  margin: 9px 0;
+  font-size: 27px;
+  color: #ffffff;
+}
+
+.portfolio-form-header-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  background: rgba(154, 81, 255, 0.17);
+  color: #c18fff;
+}
+
+.portfolio-form-description {
+  color: #a99eb8;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 10px 0 25px;
+}
+
+/* =========================================
+   FORM FIELDS
+   ========================================= */
+
+.portfolio-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.portfolio-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 20px;
+}
+
+.portfolio-form-group label {
+  color: #d1b7f1;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.portfolio-form-group input,
+.portfolio-form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid rgba(182, 131, 255, 0.23);
+  border-radius: 11px;
+  background: rgba(9, 6, 19, 0.7);
+  color: #ffffff;
+  font: inherit;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.portfolio-form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.portfolio-form-group input::placeholder,
+.portfolio-form-group textarea::placeholder {
+  color: #80748e;
+}
+
+.portfolio-form-group input:focus,
+.portfolio-form-group textarea:focus {
+  border-color: #ad71ff;
+  box-shadow: 0 0 0 3px rgba(173, 113, 255, 0.12);
+}
+
+/* =========================================
+   COMPOSE EMAIL BUTTON
+   ========================================= */
+
+.portfolio-form-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 11px;
+  background: linear-gradient(110deg, #863ef0, #b76dff);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.portfolio-form-submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(145, 65, 255, 0.3);
+}
+
+.portfolio-form-disclaimer {
+  color: #9b8daa;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 15px;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.portfolio-contact-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 75px;
+  padding: 28px 0 5px;
+  border-top: 1px solid rgba(180, 125, 255, 0.18);
+}
+
+.portfolio-contact-footer strong {
+  color: #c699ff;
+  font-size: 12px;
+  letter-spacing: 1.4px;
+}
+
+.portfolio-contact-footer p {
+  color: #8c819a;
+  font-size: 12px;
+  margin-top: 9px;
+}
+
+.portfolio-back-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #cda8ff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.portfolio-back-top:hover {
+  color: #ffffff;
+}
+
+/* =========================================
+   TABLET RESPONSIVE
+   ========================================= */
+
+@media (max-width: 900px) {
+  .portfolio-contact {
+    padding: 85px 6% 25px;
+  }
+
+  .portfolio-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .portfolio-contact-form-card {
+    padding: 25px;
+  }
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+   ========================================= */
+
+@media (max-width: 520px) {
+  .portfolio-contact-heading h2 {
+    font-size: clamp(32px, 9vw, 43px);
+    letter-spacing: -1px;
+  }
+
+  .portfolio-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .portfolio-contact-form-card {
+    padding: 20px;
+  }
+
+  .portfolio-contact-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .portfolio-contact-link {
+    padding: 12px;
+  }
+
+  .portfolio-contact-heading p {
+    font-size: 14px;
+  }
+}
+
+/* =========================================
+   NAVIGATION AND SCROLL
+   ========================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+#contact {
+  scroll-margin-top: 0;
+}
+
+/* =========================================
+   COMPACT CONTACT SECTION - DESKTOP
+   ========================================= */
+
+@media (min-width: 1100px) {
+  #contact.portfolio-contact {
+    min-height: 100vh;
+    padding: 22px 5% 18px;
+    scroll-margin-top: 0;
+  }
+
+  .portfolio-contact-heading {
+    margin-bottom: 20px;
+  }
+
+  .portfolio-contact-label {
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+
+  .portfolio-contact-heading h2 {
+    font-size: clamp(38px, 4vw, 55px);
+    margin-bottom: 8px;
+    line-height: 1.05;
+  }
+
+  .portfolio-contact-heading p {
+    max-width: 850px;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .portfolio-contact-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+
+  .portfolio-contact-left {
+    padding-top: 0;
+  }
+
+  .portfolio-available {
+    padding: 6px 11px;
+    font-size: 9px;
+  }
+
+  .portfolio-contact-left h3 {
+    font-size: 24px;
+    margin: 12px 0 7px;
+    line-height: 1.2;
+  }
+
+  .portfolio-contact-description {
+    font-size: 12px;
+    line-height: 1.45;
+    margin-bottom: 12px;
+  }
+
+  .portfolio-contact-links {
+    gap: 6px;
+  }
+
+  .portfolio-contact-link {
+    padding: 8px 12px;
+    min-height: 48px;
+    gap: 10px;
+    border-radius: 10px;
+  }
+
+  .portfolio-contact-icon {
+    width: 31px;
+    height: 31px;
+    border-radius: 8px;
+  }
+
+  .portfolio-contact-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .portfolio-contact-link-text {
+    gap: 2px;
+  }
+
+  .portfolio-contact-link-text span {
+    font-size: 9px;
+  }
+
+  .portfolio-contact-link-text strong {
+    font-size: 12px;
+  }
+
+  .portfolio-contact-bottom-note {
+    margin-top: 10px;
+    font-size: 11px;
+  }
+
+  .portfolio-contact-form-card {
+    padding: 19px;
+    border-radius: 17px;
+  }
+
+  .portfolio-form-header h3 {
+    font-size: 21px;
+    margin: 5px 0;
+  }
+
+  .portfolio-form-header span {
+    font-size: 9px;
+  }
+
+  .portfolio-form-header-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .portfolio-form-description {
+    font-size: 12px;
+    margin: 5px 0 12px;
+  }
+
+  .portfolio-form-group {
+    gap: 5px;
+    margin-bottom: 11px;
+  }
+
+  .portfolio-form-group label {
+    font-size: 9px;
+  }
+
+  .portfolio-form-group input,
+  .portfolio-form-group textarea {
+    padding: 9px 11px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+  .portfolio-form-group textarea {
+    min-height: 75px;
+  }
+
+  .portfolio-form-submit {
+    padding: 11px;
+    font-size: 12px;
+  }
+
+  .portfolio-form-disclaimer {
+    font-size: 10px;
+    margin-top: 8px;
+  }
+
+  .portfolio-contact-footer {
+    margin-top: 20px;
+    padding-top: 12px;
+  }
+
+  .portfolio-contact-footer strong,
+  .portfolio-contact-footer p,
+  .portfolio-back-top {
+    font-size: 10px;
+  }
+}
+#contact .contact-purple-title {
+  color: #b477ff !important;
+  -webkit-text-fill-color: #b477ff !important;
+  background: none !important;
+  background-image: none !important;
+}
