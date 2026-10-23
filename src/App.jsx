@@ -95,9 +95,16 @@ function App() {
               Explore My Work <ArrowUpRight size={18} />
             </a>
 
-            <a href="/resume.pdf" className="secondary-btn" download>
+            {/* <a href="/resume.pdf" className="secondary-btn" download>
               Download Resume <Download size={17} />
-            </a>
+            </a> */}
+            <a
+  href="/resume.pdf"
+  className="secondary-btn"
+  download="Yash_Raghav_Resume.pdf"
+>
+   Download Resume <Download size={17} />
+  </a>
           </div>
 
           <div className="socials">
