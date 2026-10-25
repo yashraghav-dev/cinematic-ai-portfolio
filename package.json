@@ -4,9 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
+    "dev": "node --import ./rollup-wasm-register.mjs ./node_modules/vite/bin/vite.js",
+    "build": "node --import ./rollup-wasm-register.mjs ./node_modules/vite/bin/vite.js build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -17,13 +16,14 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@rollup/wasm-node": "npm:@rollup/wasm-node@4.65.0",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
-    "@vitejs/plugin-react": "^6.1.2",
+    "@vitejs/plugin-react": "^4.7.0",
     "eslint": "^10.13.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.7",
     "globals": "^17.13.0",
-    "vite": "^8.3.4"
+    "vite": "^6.4.5"
   }
 }

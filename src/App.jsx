@@ -90,22 +90,38 @@ function App() {
             complex problems into impactful innovations.
           </p>
 
-          <div className="hero-buttons">
+          {/* <div className="hero-buttons">
             <a href="#projects" className="primary-btn">
               Explore My Work <ArrowUpRight size={18} />
             </a>
 
-            {/* <a href="/resume.pdf" className="secondary-btn" download>
-              Download Resume <Download size={17} />
-            </a> */}
-            <a
+          <a
   href="/resume.pdf"
-  className="secondary-btn"
   download="Yash_Raghav_Resume.pdf"
+  className="secondary-btn"
 >
+  Download Resume
+</a>
    Download Resume <Download size={17} />
   </a>
-          </div>
+          </div> */}
+          
+<div className="hero-buttons">
+  <a href="#projects" className="primary-btn">
+    Explore My Work <ArrowUpRight size={18} />
+  </a>
+
+
+<a
+  href="/resume.pdf"
+  download="Yash_Raghav_Resume.pdf"
+  className="secondary-btn"
+>
+  Download Resume <Download size={17} />
+</a>
+
+</div>
+
 
           <div className="socials">
             <a
