@@ -113,13 +113,12 @@ function App() {
 
 
 <a
-  href="/resume.pdf"
-  download="Yash_Raghav_Resume.pdf"
-  className="secondary-btn"
+  href="YASH RAGHAV.pdf"
+  download="YashRaghav.pdf"
+  className="resume-btn"
 >
   Download Resume <Download size={17} />
 </a>
-
 </div>
 
 
